@@ -2,9 +2,9 @@ package dad.Gson;
 
 public class Persona {
 	
-	private String Nombre;
-	private String Apellidos;
-	private int Edad;
+	private String nombre;
+	private String apellidos;
+	private int edad;
 	
 	public Persona() {
 		this("Daniel","Cabrera Cabrera", 25); 
@@ -12,27 +12,27 @@ public class Persona {
 	
 	public Persona(String nombre, String apellidos, int edad) {
 		super();
-		Nombre = nombre;
-		Apellidos = apellidos;
-		this.Edad = edad;
+		this.nombre = nombre;
+		this.apellidos = apellidos;
+		this.edad = edad;
 	}
 	public String getNombre() {
-		return Nombre;
+		return nombre;
 	}
 	public void setNombre(String nombre) {
-		Nombre = nombre;
+		this.nombre = nombre;
 	}
 	public String getApellidos() {
-		return Apellidos;
+		return apellidos;
 	}
 	public void setApellidos(String apellidos) {
-		Apellidos = apellidos;
+		this.apellidos = apellidos;
 	}
 	public int getEdad() {
-		return Edad;
+		return edad;
 	}
 	public void setEdad(int edad) {
-		this.Edad = edad;
+		this.edad = edad;
 	}
 	
 	public String toString() {
@@ -41,7 +41,7 @@ public class Persona {
 				+ "Apellidos: %s\n"
 				+ "Edad: %d\n"
 				+"---------------"
-				,Nombre,Apellidos,Edad);
+				,nombre,apellidos,edad);
 	}
 	
 
